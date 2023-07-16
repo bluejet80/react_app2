@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
   background-color: #282c34;
@@ -43,6 +49,7 @@
 
 .main {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 10px;
@@ -50,4 +57,30 @@
   color:white;
   
 
+}
+
+.button-one {
+
+  padding: 8px 10px;
+  border: 3px solid rgb(27, 153, 69);
+  background: rgb(113, 115, 207);
+  border-radius: 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+
+}
+
+.section-two {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background: grey;
+  width: 50%;
+  padding: 25px 0;
+}
+
+.section-two h1 {
+  margin-bottom: 10px;
 }
