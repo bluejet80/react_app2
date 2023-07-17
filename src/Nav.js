@@ -7,7 +7,7 @@ export default class Nav extends Component {
       <div className="Nav">
         <div className="nav-head">
           <div className="logo-box">
-            <a href="#">
+            <a href="/">
               <img className="logo-img" src="img/logo1.png" alt="logo"></img>
             </a>
           </div>
@@ -16,32 +16,32 @@ export default class Nav extends Component {
             <p>This is the Description</p>
           </div>
           <div className="login-box">
-            <a href="#" className="nav-link">
+            <a href="/login" className="nav-link">
               <p>Login</p>
             </a>
-            <a href="#" className="nav-link">
+            <a href="/signup" className="nav-link">
               <p>Signup</p>
             </a>
           </div>
         </div>
         <div className="nav-body">
           <div>
-            <a href="#" className="nav-link">
+            <a href="/" className="nav-link">
               <p>Home</p>
             </a>
           </div>
           <div>
-            <a href="#" className="nav-link">
+            <a href="/about" className="nav-link">
               <p>About</p>
             </a>
           </div>
           <div>
-            <a href="#" className="nav-link">
+            <a href="/functions" className="nav-link">
               <p>Functions</p>
             </a>
           </div>
           <div>
-            <a href="#" className="nav-link">
+            <a href="/contact" className="nav-link">
               <p>Contact</p>
             </a>
           </div>
