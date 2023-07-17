@@ -1,0 +1,36 @@
+.array-segment {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+  width: 350px;
+  height: 200px;
+  background: rgb(65, 65, 148);
+}
+
+.array-segment p {
+  margin-top: 5px;
+}
+.label {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.data {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.divider2 {
+  width: 250px;
+  height: 5px;
+  background: white;
+  margin: 10px auto;
+}
+
+.array-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px 24px;
+}

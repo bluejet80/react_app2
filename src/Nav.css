@@ -1,12 +1,41 @@
 .nav-head {
-    display: flex;
-    justify-content: space-between;
-    
+  display: flex;
+  justify-content: space-between;
 }
 .logo-img {
-    width:100px;
+  width: 70px;
 }
 
 .Nav {
-    padding: 12px;
+  padding: 12px 24px;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.nav-link :hover {
+  color: coral;
+}
+
+.login-box {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-body {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.divider {
+  margin-top: 20px;
+  height: 10px;
+  background: white;
+}
+.title-box {
+  text-align: center;
+  color: white;
 }
