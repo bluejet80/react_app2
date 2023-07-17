@@ -1,7 +1,7 @@
 
 import { Component } from 'react';
 
-class StartClass extends Component {
+export default class StartClass extends Component {
 
   constructor(props) {
     super(props);
@@ -13,7 +13,11 @@ class StartClass extends Component {
       colorTwo: 'white'
     }
 
+    this.initalState = {...this.state};
+
   }
+
+  
 
   handleClickOne = () => {
     //update the state
@@ -28,6 +32,10 @@ class StartClass extends Component {
       herName: 'Jessica Blank',
       colorTwo: 'green'
     })
+  }
+
+  resetState = () => {
+    this.setState(this.initalState)
   }
 
   render() {
@@ -50,10 +58,13 @@ class StartClass extends Component {
           <h1 style={{ color: colorTwo }}>Hello {herName}</h1>
           <button className="button-one" onClick={this.handleClickTwo}>Change Name</button>
         </div>
+        <div className="section-two">
+          <button className="button-one" onClick={this.resetState}>Reset State</button>
+        </div>
+        
       </body>
     </div>
   );
   }
 }
 
-export default StartClass;
