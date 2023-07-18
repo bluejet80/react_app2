@@ -32,6 +32,11 @@ export default class ArrayMap extends Component {
           book: "Queen Mab: A Philosophical Poem",
           year: "1813",
         },
+        {
+          name: "Percy Byshee Shelly",
+          book: "Queen Mab: A Philosophical Poem",
+          year: "1813",
+        },
       ],
     };
   }
@@ -40,9 +45,9 @@ export default class ArrayMap extends Component {
     return (
       <div className="container">
         <div className="array-container">
-          {this.state.authors.map((item) => {
+          {this.state.authors.map((item, index) => {
             return (
-              <div className="array-segment">
+              <div className="array-segment" key={index}>
                 <p>
                   <span className="label">Author: </span>
                   <span className="data">{item.name}</span>
